@@ -1,47 +1,98 @@
-## Sales Insights using-SQL & Power-BI
+# 📊 Transaction-Insights-Dashboard
 
-Project description,functions,queries written,environment used are mentioned in readme.
+A complete end-to-end data analysis project where sales data is extracted, cleaned, analyzed using **SQL**, and visualized through an interactive **Power BI dashboard**.
 
-### Sales Data - Cleaning & Exploration
-Removing and adding columns as necessary in the tables and preparing the database tables for Analysis.
-Data subset collected in [SQL dump file](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Database%20dump.sql) and loaded to SQL server for exploring the data tables.
-Tables:
-1. Customers
-2. Date
-3. Markets
-4. Products
-5. Transactions
+---
 
-### SQL queries for data cleaning and exploration
-Data acquired is cleansed using SQL queries here.
-[click here to view code](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Data%20Cleaning%20%26%20Exploration%20using%20SQL.sql)
+## 🚀 Project Overview
 
-### Analysis using SQL
-[Click here to view code](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Data%20Analysis%20using%20SQL.sql)
-Queries:
-1. All tables and their rows in sales schema
-2. Date range in date table
-3. Revenue generated in 2020 and 2019.
-4. Currency and their count
-5. Total sales amount collected by each market
-6. Sales quantity ordered from each market on each day
-7. Sales across all markets in each year
-8. Categorizing Product sales based on sales quantity in each order
-9. Calculating revenue Contribution percentage for each market across all years
-10. Finding market name that made maximum sales
+This project analyzes the sales performance of a hardware company across different markets and products. It combines the power of SQL for data cleaning and analysis with Power BI for rich data visualization.
 
-### Data Visualization using [Power BI dashboard](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Sales%20Insights%20-%20Visualization.pbix)
-Getting data into BI through SQL dump and performing Data Visualization and analysing of hardware store products across different regions, observing profit analysis and revenue trend of the company.
+---
 
-### Insights:
-1. Sales were rapidly decreasing in 2020 compared to 2019 by around 57.7%.
-2. Highest revenue generated from Markets such as Delhi NCR, Mumbai, Ahmedabad, Bhopal, Nagpur, and so on.
-3. Highest quantities sold in the Market such as Delhi NCR, Mumbai, Nagpur, Kochi, Ahmedabad, and so on.
-4. Majority of the sales were takes place in the month of January followed by November and March.
+## 🗃️ Dataset Description
 
-Dashboard of Performance Tracking of sales for quick view:
-![image](https://user-images.githubusercontent.com/106775145/209099717-295fd41e-fffc-4bdb-83ab-a50bbef24b86.png)
+Data was provided in SQL dump format and includes the following tables:
+
+- `Customers`  
+- `Date`  
+- `Markets`  
+- `Products`  
+- `Transactions`
+
+The database was restored and queried using SQL Server.
+
+---
+
+## 🔧 Environment & Tools Used
+
+- **SQL Server 2019**  
+- **Microsoft Power BI**  
+- **SQL**  
+- **DAX (Power BI)**  
+- **Windows 11**
+
+---
+
+## 🧹 Data Cleaning & Exploration (SQL)
+
+Performed initial data wrangling and formatting to prepare for analysis:
+
+- Removed unnecessary columns
+- Added derived columns (e.g., revenue, profit)
+- Joined multiple tables for consolidated views
+
+### 📄 Sample Queries:
+- Revenue by market across years
+- Sales quantity per market per day
+- Currency type and usage count
+- Revenue contribution by market
+- Top-performing products and customers
+
+---
+
+## 📈 Power BI Dashboard Features
+
+Interactive visualizations include:
+
+- **KPI Tiles:** Total Revenue, Sales Quantity, Profit Margin
+- **Revenue Trend Over Time:** Compare 2019 vs 2020
+- **Market-wise Revenue Contribution %**
+- **Customer Revenue Table with Profit Metrics**
+- **Dynamic filters** for year and date ranges
+<img width="1421" height="735" alt="image" src="https://github.com/user-attachments/assets/1eb01de3-20f5-4083-a467-794be3745849" />
+
+
+### 📊 Key Insights:
+- 📉 Revenue dropped ~57.7% in 2020 compared to 2019
+- 📍 Highest revenue from **Delhi NCR, Mumbai, Ahmedabad, Bhopal**
+- 🛒 Most product quantity sold in **Mumbai, Kochi, and Nagpur**
+- 📆 Peak sales months: **January, November, March**
 
 
 
+---
+
+## 🧠 Learning Outcomes
+
+- Practical experience in **SQL joins, aggregates, subqueries**
+- End-to-end **data pipeline**: from raw data → SQL → Power BI
+- Built dynamic and interactive business dashboards
+- Identified actionable business insights for decision-making
+
+---
+
+## 📂 Folder Structure
+
+```
+
+Sales\_Insights-SQL-Power-BI-main/
+│
+├── Data Analysis using SQL.sql
+├── Data Cleaning & Exploration using SQL.sql
+├── Database dump.sql
+├── README.md
+└── Sales Insights - Visualization.pbix
+
+```
 
